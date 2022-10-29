@@ -1,0 +1,28 @@
+# db configuration
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  # The SQL dialect makes Hibernate generate better SQL for the chosen database
+    hibernate:
+      ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  profiles:
+    active: dev
+
+project:
+  image: image/
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

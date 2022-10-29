@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://blog-db.cayuvspnzubz.ap-south-1.rds.amazonaws.com:5432/postgres
+    username: shuravi
+    password: shuravi123
+    hikari:
+      schema: blog_app_apis
+
+server:
+  port: 5000
